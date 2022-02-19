@@ -11,8 +11,9 @@
         <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     </head>
     <body>
-
+        @include('chunks.navigation')
         @yield('content')
+        @include('chunks.footer')
         <script src="{{ mix('/js/script.js')}}"></script>
         @stack('script')
     </body>

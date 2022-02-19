@@ -47,7 +47,7 @@ class FortifyServiceProvider extends ServiceProvider
         });
 
         Fortify::registerView(function () {
-            return view('register');
+            return view('auth.register');
         });
 
         Fortify::requestPasswordResetLinkView(function () {
